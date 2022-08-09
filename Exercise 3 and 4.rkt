@@ -3,5 +3,7 @@
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname |Exercise 3 and 4|) (read-case-sensitive #t) (teachpacks ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp"))) (htdp-settings #(#t constructor repeating-decimal #f #t none #f ((lib "image.rkt" "teachpack" "2htdp") (lib "universe.rkt" "teachpack" "2htdp")) #f)))
 (define str "helloworld")
 (define i 3)
+;Exercise 3:
 (string-append (substring str 0 i) "_" (substring str i))
+;Exercise 4:
 (string-append (substring str 0 i) (substring str (+ 1 i)))
